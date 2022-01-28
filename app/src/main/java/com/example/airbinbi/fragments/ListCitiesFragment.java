@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -54,7 +56,7 @@ public class ListCitiesFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        initializeContacts();
+        initializeCities();
         Observer<ArrayList<City>> observerList = contacts -> {
             adapter.setCityArrayList(contacts);
             rv.scrollToPosition(adapter.getItemCount() - 1);
@@ -69,7 +71,7 @@ public class ListCitiesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void initializeContacts() {
+    private void initializeCities() {
         rv = getView().findViewById(R.id.recyclerViewCity);
         adapter = new CityAdapter();
         rv.setLayoutManager(new LinearLayoutManager(getContext()));

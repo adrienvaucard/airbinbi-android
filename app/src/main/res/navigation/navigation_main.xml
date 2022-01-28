@@ -20,18 +20,24 @@
         android:name="com.example.airbinbi.fragments.ListCitiesFragment"
         android:label="fragment_list_cities"
         tools:layout="@layout/fragment_list_cities" >
+        <action
+            android:id="@+id/action_listCitiesFragment_to_listChambersFragment"
+            app:destination="@id/listChambersFragment" />
     </fragment>
     <fragment
         android:id="@+id/listChambersFragment"
         android:name="com.example.airbinbi.fragments.ChambersListFragment"
         android:label="fragment_list_chambers"
         tools:layout="@layout/fragment_chambers_list" >
+        <argument
+            android:name="City"
+            app:argType="com.example.airbinbi.bo.City" />
     </fragment>
     <fragment
         android:id="@+id/chamberDetailFragment"
         android:name="com.example.airbinbi.fragments.ChamberDetailFragment"
         android:label="fragment_chamber_detail"
-        tools:layout="@layout/fragment_chamber_detail" >
+        tools:layout="@layout/fragment_chamber_detail">
     </fragment>
     <fragment
         android:id="@+id/listDateFragment"

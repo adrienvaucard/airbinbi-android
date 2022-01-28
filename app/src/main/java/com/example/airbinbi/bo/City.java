@@ -4,16 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class City implements Parcelable {
+    Integer id;
     String name;
     Picture pic;
 
-    public City(String name, Picture pic) {
+    public City(Integer id, String name, Picture pic) {
+        this.id = id;
         this.name = name;
         this.pic = pic;
     }
 
     protected City (Parcel in) {
         name = in.readString();
+        id = in.readInt();
         pic = in.readParcelable(Picture.class.getClassLoader());
     }
 
@@ -24,6 +27,7 @@ public class City implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(id);
         parcel.writeString(name);
         parcel.writeParcelable(pic, i);
     }
