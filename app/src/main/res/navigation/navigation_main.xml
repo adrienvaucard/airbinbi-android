@@ -6,8 +6,37 @@
     app:startDestination="@id/homePageFragment">
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="com.example.airbinbi.HomeFragment"
-        android:label="fragment_message_detail"
+        android:name="com.example.airbinbi.fragments.HomeFragment"
+        android:label="fragment_home_page"
         tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homePageFragment_to_listCitiesFragment"
+            app:destination="@id/listCitiesFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/homePageFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/listCitiesFragment"
+        android:name="com.example.airbinbi.fragments.ListCitiesFragment"
+        android:label="fragment_list_cities"
+        tools:layout="@layout/fragment_list_cities" >
+    </fragment>
+    <fragment
+        android:id="@+id/listChambersFragment"
+        android:name="com.example.airbinbi.fragments.ChambersListFragment"
+        android:label="fragment_list_chambers"
+        tools:layout="@layout/fragment_chambers_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/chamberDetailFragment"
+        android:name="com.example.airbinbi.fragments.ChamberDetailFragment"
+        android:label="fragment_chamber_detail"
+        tools:layout="@layout/fragment_chamber_detail" >
+    </fragment>
+    <fragment
+        android:id="@+id/listDateFragment"
+        android:name="com.example.airbinbi.fragments.DateListFragment"
+        android:label="fragment_list_date"
+        tools:layout="@layout/fragment_date_list" >
     </fragment>
 </navigation>

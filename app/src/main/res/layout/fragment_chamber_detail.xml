@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChamberDetailFragment">
+    tools:context=".fragments.ChamberDetailFragment"
+    android:id="@+id/chamberDetailFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

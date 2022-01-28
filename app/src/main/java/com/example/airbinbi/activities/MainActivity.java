@@ -1,8 +1,13 @@
-package com.example.airbinbi;
+package com.example.airbinbi.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.SearchView;
+
+import com.example.airbinbi.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,4 +16,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 }
