@@ -5,6 +5,7 @@
     <string name="menu_item_3">Voyages</string>
     <string name="menu_item_4">Messages</string>
     <string name="menu_item_5">Connexion</string>
+    <string name="search">Où allez-vous ?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
