@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homePageMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/menu_item_1" />
+    <item
+        android:id="@+id/FavoritesPageMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="@string/menu_item_2" />
+    <item
+        android:id="@+id/TravelPageMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        android:title="@string/menu_item_3" />
+    <item
+        android:id="@+id/MessagesPageMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/menu_item_4" />
+    <item
+        android:id="@+id/LoginPageMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="@string/menu_item_5" />
+</menu>

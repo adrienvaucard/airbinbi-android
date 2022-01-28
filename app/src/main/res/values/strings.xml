@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AirBinbi</string>
+    <string name="menu_item_1">Explorer</string>
+    <string name="menu_item_2">Favoris</string>
+    <string name="menu_item_3">Voyages</string>
+    <string name="menu_item_4">Messages</string>
+    <string name="menu_item_5">Connexion</string>
 </resources>
